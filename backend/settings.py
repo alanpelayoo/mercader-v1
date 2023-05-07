@@ -27,8 +27,7 @@ SECRET_KEY = 'django-insecure-9xvgn(vfk5=$xv($074!bpz9navsf^3et55(#5$#82vd^l=v3n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'mercader-apcodes.herokuapp.com']
-
+ALLOWED_HOSTS = ['127.0.0.1', 'mercader-v1.herokuapp.com']
 
 # Application definition
 
@@ -146,7 +145,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': os.environ.get('DB_PWD_MERCADER'),
+        'PASSWORD': os.environ.get('DB_PWD'),
         'HOST': 'containers-us-west-110.railway.app',
         'PORT': '7915',
     }
